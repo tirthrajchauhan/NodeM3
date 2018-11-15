@@ -1,0 +1,17 @@
+{
+    "name": "MAPD713-Milestone3",
+    "version": "1.0.0",
+    "description": "RestAPI - Project - M3",
+
+    "scripts":{
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "body-parser": "^1.18.3",
+        "express": "^4.16.4",
+        "mongoose": "^5.3.12"
+    },
+    "author": "Team7",
+    "private": true,
+    "main": "server.js"
+}
