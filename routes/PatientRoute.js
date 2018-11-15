@@ -108,3 +108,9 @@ exports.getRecords = function (req, res, next){
   })
 };
 //module.exports = router;
+exports.deleteRecord = function (req, res) {
+  Record.findByIdAndRemove({_id: req.params.id}, function(err, patient){
+        if(err) res.json(err);
+        else res.json('Record successfully removed');
+    });
+};

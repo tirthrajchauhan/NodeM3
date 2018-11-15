@@ -24,7 +24,7 @@ app.get('/patients/:id', PatientRoute.getPatientById)
 
 app.post('/patients/:id/records',PatientRoute.addRecord);
 app.get('/patients/:id/records', PatientRoute.getRecords);
-
+app.delete('/patients/:id/records/:id', PatientRoute.deleteRecord);
 app.listen(PORT, function(){
     console.log('Your node js server is running on port: ',PORT);
 });
