@@ -10,7 +10,7 @@ const PatientRoute = require('./routes/PatientRoute');
 
 const PORT = process.env.PORT||7000;
 
-mongoose.connect("mongodb://localhost:27017/milestone3", { useNewUrlParser: true }).then(
+mongoose.connect("mongodb://tac:tac123580@ds115753.mlab.com:15753/healthcare", { useNewUrlParser: true }).then(
     () => {console.log('Database is connected')},
     err => {console.log('Can not connect to the database' +err)
 });
